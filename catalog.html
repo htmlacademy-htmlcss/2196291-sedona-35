@@ -49,6 +49,8 @@
           </li>
         </ul>
       </header>
+    </main>
+    <main>
       <section class="catalog-hotels">
         <h2 class="visually-hidden">Список гостинниц</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -110,6 +112,8 @@
 
             <button class="button" type="submit">Применить</button>
           </form>
+        </section>
+        <section>
           <select class="select-control" aria-label="Сортировка">
             <option value="popular">Сначала популярные</option>
             <option value="cheap">Сначала дешёвые</option>
@@ -124,6 +128,8 @@
           <a href="#" class="button button-light">
             <span class="visually-hidden">Показать список</span>
           </a>
+        </section>
+        <section class="hotels-list">
           <ul class="hotels-list">
             <li class="hotels-card">
               <a class="hotels-card-link" href="product.html">
@@ -135,10 +141,19 @@
               <a class="hotels-detailed-button button" href="#">подробнее</a>
               <a class="hotels-card-button button" href="#">в избранное</a>
             </li>
-
           </ul>
+      </section>
+    </main>
 
-
+    <section class="mailing">
+      <h2>Подпишитесь на рассылку</h2>
+      <p class="mailing">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+            <button class="button newsletter-button" type="submit">
+              <span class="visually-hidden">Отправить</span>
+            </button>
+    </section>
     <footer class="page-footer">
       <section class="footer-social">
         <ul class="footer-social-list">
