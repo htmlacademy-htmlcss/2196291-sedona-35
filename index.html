@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -30,7 +31,7 @@
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="#">
-                  <span class="visually-hidden">Хочу сюда!</span></a>
+                  <span class="button">Хочу сюда!</span></a>
                 </li>
               </ul>
       </nav>
@@ -39,6 +40,8 @@
         <h1 class="visually-hidden">Добро пожаловать в Седона</h1>
         <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Логотип города Седона">
 
+
+      <div class="index-columns">
         <section class="advantages">
           <h2 >Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -78,17 +81,18 @@
             </ul>
         </section>
         <section class="search-hotels">
-          <h2>Заинтересовались?</h2>
+          <h2 class="search-title">Заинтересовались?</h2>
           <p class="search-hotels">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне </p>
           <a class="button button-catalog" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
+      </div>
         <section class="mailing">
           <h2>Подпишитесь на рассылку</h2>
           <p class="mailing">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
                 <input class="field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
                 <button class="button newsletter-button" type="submit">
-                  <span class="button-mailing">Подписаться</span>
+                  <span class="button button-mailing">Подписаться</span>
                 </button>
             </form>
         </section>
