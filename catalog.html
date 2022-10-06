@@ -47,75 +47,57 @@
             <a class="breadcrumbs-link" href="index.html">
               <span class="visually-hidden">Главная</span></a>
           </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог</a>
-          </li>
         </ul>
-      </header>
-
-
-      <section class="catalog-hotels">
+       <section class="catalog-hotels">
         <h2 class="visually-hidden">Список гостинниц</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-
-          <fieldset class="catalog-filter-group">
             <p class="catalog-filter-title">Инфраструктура:</p>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="swimming pool" checked>
-
                   Бассейн
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="Parking space" checked>
-
                   Парковка
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="Wi-Fi" >
-
                   Wi-Fi
                 </label>
               </li>
-
             </ul>
-          </fieldset>
 
-          <fieldset class="catalog-hotels">
             <p class="catalog-filter-title">Тип жилья:</p>
             <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="hotels-group" value="hotels-radio" checked>
-
                     Гостиница
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="hotels-group" value="Motel-radio" >
-
                     Мотель
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="hotels-group" value="Apartments-radio">
-
                     Апартаменты
                   </label>
                 </li>
               </ul>
-            </fieldset>
-
             <button class="button" type="submit">Применить</button>
-          </form>
         </section>
+      </header>
+
         <section class="filters">
           <h2 class="filters-result">Найдено гостиниц: 38</h2>
           <select class="select-control" aria-label="Сортировка">
@@ -197,20 +179,18 @@
           </ul>
 
         </section>
-
-      </sectio>
+      </section>
+      <section class="mailing">
+        <h2>Подпишитесь на рассылку</h2>
+        <p class="mailing">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+              <button class="button newsletter-button" type="submit">
+                <span class="button-mailing">Подписаться</span>
+              </button>
+          </form>
+      </section>
     </main>
-
-    <section class="mailing">
-      <h2>Подпишитесь на рассылку</h2>
-      <p class="mailing">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
-            <button class="button newsletter-button" type="submit">
-              <span class="button-mailing">Подписаться</span>
-            </button>
-        </form>
-    </section>
     <footer class="page-footer">
       <section class="footer-social">
         <ul class="footer-social-list">
