@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="page">
     <header class="page-header">
       <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
       <nav class="navigation">
@@ -37,8 +38,10 @@
       </nav>
     </header>
       <main class="main-index">
-        <h1 class="visually-hidden">Добро пожаловать в Седона</h1>
-        <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Логотип города Седона">
+        <section class="hero">
+          <h1 class="visually-hidden">Добро пожаловать в Седона</h1>
+          <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Логотип города Седона">
+        </section>
 
 
         <section class="advantages">
@@ -84,14 +87,17 @@
           <p class="search-hotels">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне </p>
           <a class="button button-catalog" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
-        <section class="mailing">
-          <h2>Подпишитесь на рассылку</h2>
-          <p class="mailing">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
-                <button class="button newsletter-button" type="submit">Подписаться</button>
-            </form>
-        </section>
+        <section class="mailing mailing-foon">
+
+              <h2>Подпишитесь на рассылку</h2>
+              <p class="mailing">Только полезная информация и никакого спама, честное бойскаутское!</p>
+                <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <input class="field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+                    <button class="button newsletter-button" type="submit">Подписаться</button>
+                </form>
+
+         </section>
+
       </main>
     <footer class="page-footer">
       <section class="footer-social">
@@ -121,5 +127,6 @@
         <a href="https://htmlacademy.ru/"><img src="images/logo_htmlacademy.png" width="115"  height="33"  alt="Логотип htmlacademy"></a>
       </section>
     </footer>
+  </div>
   </body>
 </html>

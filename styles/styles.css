@@ -30,12 +30,20 @@
   font-display: swap;
 }
 
-body{
+.body{
+
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
+}
+
+.page{
+  width: 1200px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -81,12 +89,12 @@ background-color: #82B3D3;
   text-transform: capitalize;
 }
 
-.main-index {
+.hero {
   color: #000000;
   background-color: #ffffff;
   background-image: url("../images/background-welcome.jpg");
-  background-size: 100% auto;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .advantages-list {
   text-align: center;
@@ -118,15 +126,20 @@ background-color: #82B3D3;
 }
 
 .mailing{
-  font-size: 30px;
-  font-style: Bold;
-  font-weight: 700;
-  color: #ffffff;
+font-size: 30px;
+font-weight: 700;
+color: #ffffff;
+
+text-align: center;
+
+}
+
+.mailing-foon{
   background-color: #ffffff;
   background-image: url("../images/background-mailing-list.jpg");
-  background-size: 100% auto;
+  background-size: 100% 100% ;
   background-repeat: no-repeat;
-  text-align: center;
+
 }
 
 .footer-contacts-address-phone {
