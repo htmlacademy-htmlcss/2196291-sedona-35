@@ -30,10 +30,22 @@
   font-display: swap;
 }
 
-body{
+.body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.page {
+  width: 1200px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.page-header {
   color: #000000;
   background-color: #FFFFFF;
 }
@@ -49,15 +61,14 @@ body{
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  border: 0ch;
+  border: none;
 }
 
-.hotels-card-button{
-background-color: #82B3D3;
+.hotels-card-button {
+  background-color: #82B3D3;
 }
 
-
-.newsletter-button{
+.newsletter-button {
   font-family: inherit;
   font-size: 20px;
   line-height: 36px;
@@ -65,11 +76,43 @@ background-color: #82B3D3;
   background-color: #82B3D3;
 }
 
-.page-header {
+.hotels-list{
+  font-family: "PT Sans", sans-serif;
   color: #000000;
-  background-color:#FFFFFF;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.hotels-card-link {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
 }
 
+.hotels-type{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.hotels-card-price{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.filters-result {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.filters-result-title{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
 .navigation-link {
   font-family: "PT Sans", sans-serif;
   line-height: 24px;
@@ -81,13 +124,14 @@ background-color: #82B3D3;
   text-transform: capitalize;
 }
 
-.main-index {
+.hero {
   color: #000000;
   background-color: #ffffff;
   background-image: url("../images/background-welcome.jpg");
-  background-size: 100% auto;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
+
 .advantages-list {
   text-align: center;
 }
@@ -98,6 +142,7 @@ background-color: #82B3D3;
   background-color: #ffffff;
 
 }
+
 .advantages-title {
   font-family: "PT Sans ", sans-serif;
   font-size: 24px;
@@ -105,11 +150,11 @@ background-color: #82B3D3;
   text-transform: uppercase;
 }
 
-.search-hotels{
+.search-hotels {
   text-align: center;
 }
 
-.search-title{
+.search-title {
   font-size: 30px;
   font-style: Bold;
   line-height: 36px;
@@ -117,43 +162,46 @@ background-color: #82B3D3;
   text-transform: uppercase;
 }
 
-.mailing{
+.mailing {
+  height: 415px;
   font-size: 30px;
-  font-style: Bold;
   font-weight: 700;
   color: #ffffff;
-  background-color: #ffffff;
-  background-image: url("../images/background-mailing-list.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
   text-align: center;
+  background-image: url("../images/background-mailing-list.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
-.footer-contacts-address-phone {
-  font-size: 40px;
-  line-height: 4px;
-  text-decoration: none;
+.mailing-catalog {
+  height: 415px;
+  font-size: 30px;
+  font-weight: 700;
   color: #000000;
-
+  text-align: center;
+  background-color: #ffffff;
 }
 
-.inner-header{
+.filter-catalog{
+  color: #000000;
+}
+.filter-content {
   color: #ffffff;
   background-color: #af1f1f;
   background-image: url("../images/background-catalog.jpg");
-
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.inner-header-title {
+.filter-content-title {
   font-size: 60px;
   line-height: 78px;
   text-transform: uppercase;
 }
 
 .breadcrumbs {
-  color:#ffffff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -169,18 +217,24 @@ background-color: #82B3D3;
 .pagination-link {
   font-size: 20px;
   line-height: 36px;
+  font-weight: 700;
   color: #ffffff;
   background-color: #82B3D3;
   text-decoration: none;
-  line-height: 16px;
-  font-weight: 700;
-}
+  }
 
 .pagination-current {
-  color:#000000;
+  color: #000000;
   background-color: #F2F2F2;
 }
 
 .pagination-disabled {
   background-color: #82B3D3;
+}
+
+.footer-contacts-address-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
 }
