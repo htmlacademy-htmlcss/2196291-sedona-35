@@ -46,27 +46,12 @@ body {
   flex-grow: 1;
 }
 
-.navigation {
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.navigation-list {
-  width: 600px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.navigation-user {
-  max-width: 310px;
-  margin-left: auto;
-}
-
-.logo{
+.logo {
   display: block;
   margin: 0 auto;
 }
+
+
 .page {
   width: 1200px;
   margin: 0 auto;
@@ -82,6 +67,32 @@ body {
   background-color: #FFFFFF;
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-navigation {
+  margin-left: 70px;
+
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navigation-user {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+  margin: 0 auto;
+}
+
 .button {
   font-family: inherit;
   font-size: 16px;
@@ -94,7 +105,6 @@ body {
   text-transform: uppercase;
   border-radius: 4px;
   border: none;
-  Padding: 8px 50px;
 }
 
 li {
@@ -113,7 +123,36 @@ li {
   background-color: #82B3D3;
 }
 
+.catalog-filter {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 70px;
+}
+
+.catalog-filter-group {
+  border: 0 none;
+}
+
+.hotels-card {
+  width: 340px;
+  border: 4px #000000;
+}
+
+.hotels-card-list {
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  width: 270px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 0 auto;
+}
+
 .hotels-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   font-family: "PT Sans", sans-serif;
   color: #000000;
   font-size: 16px;
@@ -142,6 +181,8 @@ li {
 }
 
 .filters-result {
+  display: flex;
+  justify-content: space-between;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -186,13 +227,17 @@ li {
   background-color: #ffffff;
 }
 
-.advantages-item{
+.advantages-item {
   width: 400px;
   height: 384px;
+  background-color: #82B3D3;
+  align-items: baseline;
 }
-.advantages-images{
+
+.advantages-images {
   width: 800px;
 }
+
 .advantages-title {
   font-family: "PT Sans ", sans-serif;
   font-size: 24px;
@@ -202,8 +247,7 @@ li {
   padding: 0;
 }
 
-
-.search{
+.search {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -219,15 +263,28 @@ li {
   text-transform: uppercase;
 }
 
-.mailing {
-  height: 415px;
+.Subscribe {
+  display: flex;
+  justify-content: center;
   font-size: 30px;
   font-weight: 700;
-  color: #ffffff;
   text-align: center;
+  flex-direction: column;
+  align-items: center;
+  height: 415px;
+  background-color: #FFFFFF;
+}
+
+.Subscribe-index {
+  color: #ffffff;
   background-image: url("../images/background-mailing-list.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.Subscribe-catalog {
+  color: #000000;
+
 }
 
 .mailing-catalog {
@@ -240,12 +297,13 @@ li {
 }
 
 .filter-catalog {
+  width: 1200px;
   color: #000000;
 }
 
 .filter-content {
   color: #ffffff;
-  background-color: #af1f1f;
+  background-color: #a09c9c;
   background-image: url("../images/background-catalog.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -268,6 +326,9 @@ li {
 }
 
 .pagination {
+  display: flex;
+  justify-content: flex-start;
+  width: 1060px;
   background-color: #ffffff;
 }
 
@@ -275,9 +336,16 @@ li {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  color: #ffffff;
-  background-color: #82B3D3;
   text-decoration: none;
+  color: #FFFFFF;
+}
+
+.pagination-item {
+  width: 60px;
+  height: 60px;
+
+  background-color: #82B3D3;
+  margin-right: 8px;
 }
 
 .pagination-current {
@@ -285,9 +353,6 @@ li {
   background-color: #F2F2F2;
 }
 
-.pagination-disabled {
-  background-color: #82B3D3;
-}
 
 .footer-contacts-address-phone {
   font-size: 40px;
@@ -296,7 +361,23 @@ li {
   color: #000000;
 }
 
-.page-footer{
+.page-footer {
   display: flex;
-  justify-content: space-between;
+  width: 1200px;
+  align-items: center;
+}
+
+.footer-social {
+  width: 142px;
+  margin-left: 70px;
+}
+
+.footer-contacts {
+  width: 720px;
+  margin-left: 253px;
+}
+
+.footer-logo-html {
+  max-width: 115px;
+  margin-right: 70px;
 }
