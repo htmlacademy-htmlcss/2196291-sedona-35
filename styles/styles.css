@@ -63,7 +63,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background: #FFFFFF;
-  box-shadow: none none 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .page-header {
@@ -132,16 +132,23 @@ li {
 
 .catalog-filter {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-left: 70px;
+}
+
+.catalog-filter-list {
+  padding: 0px;
 }
 
 .catalog-filter-group {
   border: 0 none;
+  padding-right: 35px;
+  padding-left: 0px;
 }
 
 .hotels-card {
   width: 340px;
+  padding: 10px;
 }
 
 .hotels-card-list {
@@ -155,15 +162,28 @@ li {
   margin: 0 auto;
 }
 
+.hotels-card-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  border: 1px solid #E6E6E6;
+
+}
+
+.hotels-list-section {
+  width: 1080px;
+  margin: 0 auto;
+}
+
 .hotels-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   font-family: "PT Sans", sans-serif;
   color: #000000;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  padding: 0px;
 }
 
 .hotels-card-link {
@@ -173,6 +193,7 @@ li {
   text-decoration: none;
   color: #000000;
 }
+
 
 .hotels-type {
   font-size: 18px;
@@ -192,6 +213,8 @@ li {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  padding-left: 70px;
+
 }
 
 .filters-result-title {
@@ -273,7 +296,7 @@ li {
   text-transform: uppercase;
 }
 
-.Subscribe {
+.subscribe {
   display: flex;
   justify-content: center;
   font-size: 30px;
@@ -285,14 +308,14 @@ li {
   background-color: #ffffff;
 }
 
-.Subscribe-index {
+.subscribe-index {
   color: #ffffff;
   background-image: url("../images/background-mailing-list.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.Subscribe-box {
+.subscribe-box {
   display: flex;
   flex-direction: column;
 }
@@ -323,6 +346,8 @@ li {
   font-size: 60px;
   line-height: 78px;
   text-transform: uppercase;
+  padding-top: 35px;
+  padding-left: 70px;
 }
 
 .breadcrumbs {
@@ -335,12 +360,22 @@ li {
   text-decoration: none;
 }
 
+hr {
+  width: 1060px;
+  border: 1px solid #E6E6E6;
+  text-align: center;
+  margin: 40px 0px 40px 12px;
+}
+
+
 .pagination {
   display: flex;
   justify-content: flex-start;
   width: 1060px;
   background-color: #ffffff;
+  padding-left: 10px;
 }
+
 
 .pagination-link {
   font-size: 20px;
