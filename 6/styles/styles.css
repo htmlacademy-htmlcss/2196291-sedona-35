@@ -42,6 +42,14 @@ body {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .main-conteiner {
   flex-grow: 1;
 }
@@ -50,7 +58,6 @@ body {
   display: block;
   margin: 0 auto;
 }
-
 
 .page {
   width: 1200px;
@@ -75,7 +82,6 @@ body {
 
 .logo-navigation {
   margin-left: 70px;
-
 }
 
 .navigation-list {
@@ -84,6 +90,7 @@ body {
   width: 340px;
   margin: 0 auto;
   padding: 0;
+  padding-top: 20px;
 }
 
 .navigation-user {
@@ -135,7 +142,6 @@ li {
 
 .hotels-card {
   width: 340px;
-  border: 4px #000000;
 }
 
 .hotels-card-list {
@@ -228,10 +234,12 @@ li {
 }
 
 .advantages-item {
+  display: flex;
   width: 400px;
   height: 384px;
   background-color: #82B3D3;
-  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .advantages-images {
@@ -248,12 +256,14 @@ li {
 }
 
 .search {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 406px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 592px;
   text-align: center;
   margin: 0 auto;
+  padding: 96px;
 }
 
 .search-title {
@@ -272,7 +282,7 @@ li {
   flex-direction: column;
   align-items: center;
   height: 415px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .Subscribe-index {
@@ -282,18 +292,18 @@ li {
   background-size: cover;
 }
 
-.Subscribe-catalog {
-  color: #000000;
-
+.Subscribe-box {
+  display: flex;
+  flex-direction: column;
 }
 
-.mailing-catalog {
-  height: 415px;
-  font-size: 30px;
-  font-weight: 700;
-  color: #000000;
-  text-align: center;
-  background-color: #ffffff;
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+}
+
+.field {
+  width: 523px;
 }
 
 .filter-catalog {
@@ -341,11 +351,14 @@ li {
 }
 
 .pagination-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 60px;
   height: 60px;
-
   background-color: #82B3D3;
   margin-right: 8px;
+  text-align: center;
 }
 
 .pagination-current {
@@ -368,16 +381,35 @@ li {
 }
 
 .footer-social {
+  display: flex;
   width: 142px;
   margin-left: 70px;
 }
 
+.footer-social-list {
+  display: flex;
+}
+
 .footer-contacts {
+  display: flex;
   width: 720px;
   margin-left: 253px;
+  padding: 45px;
 }
 
 .footer-logo-html {
   max-width: 115px;
   margin-right: 70px;
+}
+
+.logo {
+  padding-top: 51.5px;
+  padding-bottom: 83px;
+}
+
+.advantages-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 69px;
 }
