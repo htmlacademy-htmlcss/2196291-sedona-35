@@ -86,18 +86,18 @@ body {
 
 .navigation-list {
   display: flex;
-  justify-content: space-between;
   width: 340px;
-  margin: 0 auto;
-  padding: 0;
-  padding-top: 20px;
+  padding: 20px 16px;
+  gap: 0px 32px;
+  margin: 0 0 0 28px;
 }
 
 .navigation-user {
   display: flex;
-  justify-content: space-between;
-  width: 340px;
-  margin: 0 auto;
+  justify-content: flex-end;
+  width: 480px;
+  margin: 14px 70px 14px 0;
+  padding: 4px 34px;
 }
 
 .button {
@@ -116,6 +116,7 @@ body {
 
 li {
   list-style-type: none;
+  padding: 0px;
 }
 
 .hotels-card-button {
@@ -148,18 +149,21 @@ li {
 
 .hotels-card {
   width: 340px;
-  padding: 10px;
 }
 
 .hotels-card-list {
   font-size: 18px;
   font-weight: 400;
   display: flex;
-  width: 270px;
+  width: 300px;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding: 5px;
   margin: 0 auto;
+}
+
+.hotels-card-list > li {
+  margin: 16px;
+  flex-grow: 4;
 }
 
 .hotels-card-catalog {
@@ -184,6 +188,7 @@ li {
   line-height: 20px;
   font-weight: 400;
   padding: 0px;
+  gap: 20px;
 }
 
 .hotels-card-link {
@@ -261,12 +266,25 @@ li {
   width: 400px;
   height: 384px;
   background-color: #82B3D3;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .advantages-images {
   width: 800px;
+}
+
+.advantages-item-card {
+  width: 230px;
+}
+
+.advantages-line {
+  width: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  margin: 0px 85px 30px 85px;
 }
 
 .advantages-title {
@@ -276,6 +294,31 @@ li {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  padding-bottom: 30px;
+}
+
+.advantages-description {
+  margin: 0px;
+}
+
+.advantages-item:nth-child(2n+1) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+
+.advantages-item:nth-child(2n) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item:nth-child(1) {
+  background-color: #82B3D3;
+  color: #ffffff;
+
+}
+
+.advantages-item:nth-child(7) {
+  background-color: #82B3D3;
+  color: #ffffff;
 }
 
 .search {
@@ -360,12 +403,13 @@ li {
   text-decoration: none;
 }
 
-hr {
+.catalog-line {
   width: 1060px;
   border: 1px solid #E6E6E6;
   text-align: center;
   margin: 40px 0px 40px 12px;
 }
+
 
 
 .pagination {
