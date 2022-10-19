@@ -101,7 +101,7 @@ body {
 }
 
 .button {
-  font-family: inherit;
+  font-family: "PT Sans";
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -112,6 +112,42 @@ body {
   text-transform: uppercase;
   border-radius: 4px;
   border: none;
+}
+
+.button-catalog-filter {
+  background-color: #82B3D3;
+  min-width: 191px;
+  min-height: 36px;
+  margin-bottom: 16px;
+}
+
+.button-search {
+  padding: 8px 50px;
+}
+
+.button-navigation-user {
+  padding: 8px 34px;
+}
+
+.button-catalog-filter-reset {
+  background-color: transparent;
+  border: none;
+  min-width: 191px;
+  min-height: 36px;
+  margin-top: 16px;
+
+}
+
+.hotels-detailed-button {
+  padding: 4px 13px;
+}
+
+.hotels-card-button {
+  padding: 4px 10px;
+}
+
+hotels-type {
+  padding: 8px 26px;
 }
 
 li {
@@ -133,12 +169,18 @@ li {
 
 .catalog-filter {
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
   margin-left: 70px;
+  padding-bottom: 70px;
 }
 
 .catalog-filter-list {
   padding: 0px;
+}
+
+.catalog-filter-item {
+  padding: 8px;
+
 }
 
 .catalog-filter-group {
@@ -154,16 +196,14 @@ li {
 .hotels-card-list {
   font-size: 18px;
   font-weight: 400;
-  display: flex;
+  display: grid;
+  grid-template-columns: 140px 140px;
   width: 300px;
-  flex-wrap: wrap;
   padding: 5px;
-  margin: 0 auto;
 }
 
 .hotels-card-list > li {
-  margin: 16px;
-  flex-grow: 4;
+  margin: 16px 0px;
 }
 
 .hotels-card-catalog {
@@ -226,6 +266,11 @@ li {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+}
+
+.select-control {
+  margin: 24.9px;
+  width: 294px;
 }
 
 .navigation-link {
@@ -322,10 +367,8 @@ li {
 }
 
 .search {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+  display: grid;
+  justify-items: center;
   width: 592px;
   text-align: center;
   margin: 0 auto;
@@ -339,16 +382,23 @@ li {
   text-transform: uppercase;
 }
 
+.search-hotels {
+  margin-top: 20px;
+  margin-bottom: 54px;
+
+}
+
 .subscribe {
-  display: flex;
-  justify-content: center;
+  font-family: PT Sans, sans-serif;
+  display: grid;
   font-size: 30px;
   font-weight: 700;
   text-align: center;
-  flex-direction: column;
   align-items: center;
   height: 415px;
   background-color: #ffffff;
+  align-items: center;
+  justify-items: center;
 }
 
 .subscribe-index {
@@ -359,8 +409,18 @@ li {
 }
 
 .subscribe-box {
-  display: flex;
-  flex-direction: column;
+  width: 684px;
+}
+
+.subscribe-box > p {
+  font-family: PT Sans, sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 54px;
+  margin: 0px;
 }
 
 .newsletter-form {
@@ -370,6 +430,7 @@ li {
 
 .field {
   width: 523px;
+  height: 52px;
 }
 
 .filter-catalog {
@@ -391,6 +452,7 @@ li {
   text-transform: uppercase;
   padding-top: 35px;
   padding-left: 70px;
+  margin: 0;
 }
 
 .breadcrumbs {
@@ -409,7 +471,6 @@ li {
   text-align: center;
   margin: 40px 0px 40px 12px;
 }
-
 
 
 .pagination {
