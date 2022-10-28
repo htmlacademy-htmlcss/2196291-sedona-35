@@ -87,6 +87,15 @@ body {
   list-style-type: none;
 }
 
+.navigation-icon {
+  position: absolute;
+  top: 17px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
 .button {
   display: inline-block;
   padding: 8px 16px;
@@ -101,6 +110,34 @@ body {
   text-transform: uppercase;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
+}
+
+.button-footer-social-item {
+  display: inline-block;
+  padding: 8px 16px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-filters-result {
+  display: grid;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.button-filters-result:last-child {
+  margin-right: 0;
 }
 
 .button-catalog-filter {
@@ -249,7 +286,6 @@ body {
 
 .filters-result {
   display: flex;
-  justify-content: space-between;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -261,14 +297,21 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  width: 340px;
+  text-transform: uppercase;
 }
 
 .select-control {
-  margin: 24.9px;
+  margin-top: 24.9px;
+  margin-bottom: 24.9px;
+  margin-left: 200px;
+  margin-right: 70px;
   width: 294px;
 }
 
 .navigation-link {
+  position: relative;
+  display: block;
   font-family: "PT Sans", sans-serif;
   line-height: 24px;
   font-weight: 700;
@@ -277,6 +320,7 @@ body {
   background-color: #FFFFFF;
   text-decoration: none;
   text-transform: capitalize;
+  min-width: 44px;
 }
 
 .hero {
@@ -311,6 +355,23 @@ body {
   justify-content: center;
 }
 
+.advantages-item-home {
+  background-image: url("../images/home.svg");
+  background-repeat: no-repeat;
+  background-position: top 80px right 161px;
+}
+
+.advantages-item-food {
+  background-image: url("../images/food.svg");
+  background-repeat: no-repeat;
+  background-position: top 81px right 162.5px;
+}
+
+.advantages-item-souvenir {
+  background-image: url("../images/souvenir.svg");
+  background-repeat: no-repeat;
+  background-position: top 78px right 167.5px;
+}
 
 .advantages-images {
   width: 800px;
@@ -334,6 +395,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  padding-top: 80px;
   padding-bottom: 30px;
 }
 
@@ -524,7 +586,9 @@ body {
 
 .footer-social-list {
   display: flex;
+  align-items: center;
   list-style-type: none;
+  padding: 0;
 }
 
 .footer-contacts {
