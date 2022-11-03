@@ -391,6 +391,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   background-color: #82B3D3;
+  border-radius: 0 4px 4px 0;
 }
 
 .newsletter-button:hover {
@@ -580,6 +581,12 @@ body {
   margin-right: 70px;
   width: 292px;
   height: 49px;
+  padding: 0 20px;
+  border-radius: 4px;
+  appearance: none;
+  background-image: url(../images/arrow-down-input.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
 }
 
 .navigation-link {
@@ -795,7 +802,13 @@ body {
 .field {
   min-width: 523px;
   min-height: 52px;
+  margin-right: -1px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  background-color: #F2F2F2;
+  padding: 0 20px;
 }
+
 
 .filter-catalog {
   width: 1200px;
@@ -1035,11 +1048,12 @@ body {
 }
 
 .range-input-from {
-  margin-right: 2px;
+  margin-right: -2px;
   border-radius: 4px 0 0 4px;
 }
 
 .range-input-to {
+  margin-left: -2px;
   border-radius: 0 4px 4px 0;
 }
 
