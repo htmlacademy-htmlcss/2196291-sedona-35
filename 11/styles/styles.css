@@ -704,10 +704,10 @@ body {
   margin: 0 auto;
 }
 
-.advantages-item-1 h3,
-.advantages-item-7 h3,
-.advantages-item-1 p,
-.advantages-item-7 p {
+.city h3,
+.devils-bridge h3,
+.city p,
+.devils-bridge p {
   color: #FFFFFF;
 }
 
@@ -742,7 +742,7 @@ body {
   text-align: center;
 }
 
-.advantages-item-1 {
+.city {
   background-color: #82B3D3;
   grid-row-start: 1;
   grid-column-start: 1;
@@ -753,7 +753,7 @@ body {
 }
 
 
-.advantages-item-2 {
+.advantages-images {
   background-color: #82B3D3;
   background-image: url(../images/photo_city_sedona.jpg);
   background-size: contain;
@@ -764,7 +764,7 @@ body {
   grid-column-end: 4;
 }
 
-.advantages-item-3 {
+.small-area {
   background-color: rgba(131, 179, 211, 0.12);
   grid-row-start: 2;
   grid-column-start: 1;
@@ -773,7 +773,7 @@ body {
   padding-top: 102px;
 }
 
-.advantages-item-4 {
+.beautiful-road {
   background-color: rgba(131, 179, 211, 0.2);
   grid-row-start: 2;
   grid-column-start: 2;
@@ -782,7 +782,7 @@ body {
   padding-top: 102px;
 }
 
-.advantages-item-5 {
+.few-tourists {
   background-color: rgba(131, 179, 211, 0.12);
   grid-row-start: 2;
   grid-column-start: 3;
@@ -791,7 +791,7 @@ body {
   padding-top: 102px;
 }
 
-.advantages-item-6 {
+.canyon {
   background-color: #959898;
   grid-row-start: 3;
   grid-column-start: 1;
@@ -799,7 +799,7 @@ body {
   grid-column-end: 3;
 }
 
-.advantages-item-7 {
+.devils-bridge {
   background-color: #82B3D3;
   grid-row-start: 3;
   grid-column-start: 3;
@@ -808,7 +808,7 @@ body {
   padding-top: 92px;
 }
 
-.advantages-item-8 {
+.advantages-item-home {
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url("../images/home.svg");
   background-repeat: no-repeat;
@@ -820,7 +820,7 @@ body {
   padding-top: 182px;
 }
 
-.advantages-item-9 {
+.advantages-item-food {
   background-image: url("../images/food.svg");
   background-repeat: no-repeat;
   background-position: top 81px right 162.5px;
@@ -832,7 +832,7 @@ body {
   padding-top: 182px;
 }
 
-.advantages-item-10 {
+.advantages-item-souvenir {
   background-image: url("../images/souvenir.svg");
   background-repeat: no-repeat;
   background-position: top 78px right 167.5px;
