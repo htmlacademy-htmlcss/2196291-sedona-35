@@ -42,8 +42,7 @@
                 <span class="visually-hidden">Отзывы </span></a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="button button-navigation-user">Хочу сюда!</span></a>
+              <a class="navigation-link button-navigation-user" href="#"> Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -51,7 +50,7 @@
       <main class="main-conteiner main-index">
         <section class="hero">
           <h1 class="visually-hidden">Добро пожаловать в Седона</h1>
-          <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Логотип города Седона">
+          <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Логотип города Седона.">
         </section>
         <section class="advantages">
           <div class="advantages-heading">
@@ -67,7 +66,6 @@
               </div>
             </li>
             <li class="advantages advantages-images">
-              <!-- <img class="" src="images/photo_city_sedona.jpg" width="800" height="384" alt="фото города Седона"> -->
             </li>
             <li class="advantages small-area">
               <div class="advantages-item-card">
@@ -91,7 +89,7 @@
               </div>
             </li>
             <li class="advantages advantages-images canyon">
-              <img class="" src="images/photo_sedona_canyon.jpg" width="800" height="384" alt="фото города Седона">
+              <img class="" src="images/photo_sedona_canyon.jpg" width="800" height="384" alt="фото города Седона.">
             </li>
             <li class="advantages devils-bridge">
               <div class="advantages-item-card">
@@ -132,6 +130,7 @@
             <h2 class="sudscribe-tetle">Подпишитесь на рассылку</h2>
             <p class="sudscribe-descriptor">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="newsletter-email"></label>
               <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
                 required>
               <button class=" newsletter-button" type="submit">Подписаться</button>
@@ -141,6 +140,7 @@
       </main>
       <footer class="page-footer">
         <section class="footer-social">
+          <h2 class="visually-hidden">Социальные сети.</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="button-footer-social" href="https://vk.com/htmlacademy">
@@ -187,9 +187,11 @@
           </ul>
         </section>
         <section class="footer-contacts">
+          <h2 class="visually-hidden">Телефон</h2>
           <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
         <section class="footer-logo-html">
+          <h2 class="visually-hidden">Сайт HTML-академии.</h2>
           <a class="footer-logo" href="https://htmlacademy.ru/">
             <svg class="HTML-logo" width="115" height="34" viewBox="0 0 115 34" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -231,7 +233,7 @@
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="group-input">
-                <label class="label-data">Дата Заезда:</label>
+                <label class="label-data" for="check-in">Дата Заезда:</label>
                 <input class="input-from " type="text" id="check-in" name="check-in" value="27 апреля 2020"
                   placeholder="Укажите дату заезда">
                 <span class="Input-from-icon">
@@ -272,7 +274,7 @@
 
                 </span>
                 <span class="error-message ">Мы не можем отправить вас в прошлое.</span>
-                <label class="label-data label-data-out">Дата Выезда:</label>
+                <label class="label-data label-data-out" for="check-out">Дата Выезда:</label>
                 <input class="input-from input-form-out " type="text" id="check-out" name="check-out"
                   value="1 сентября 2023" placeholder="Укажите дату выезда">
                 <span class="Input-from-icon">
@@ -317,8 +319,11 @@
               <div class="field-group ">
                 <label class="input-group">Взрослые:</label>
                 <section class="input-plus-minus">
+                  <h2 class="visually-hidden">Увеличить или уменьшить колличество взрослых.</h2>
                   <button class="button-minus"></button>
-                  <input class="input-frame " name="input-frame-plus-minus" type="text" id="col" value="2">
+                  <label class="frame-text" for="col">
+                    <input class="input-frame " name="input-frame-plus-minus" type="text" id="col" value="2">
+                  </label>
                   <button class="button-plus"></button>
                 </section>
                 <span class="input-group input-children">
@@ -338,8 +343,11 @@
                   </span>
                 </span>
                 <section class="input-plus-minus">
+                  <h2 class="visually-hidden">Увеличить или уменьшить колличество детей.</h2>
                   <button class="button-minus"></button>
-                  <input class="input-frame" name="input-frame-plus-minus" type="text" id="col" value="2">
+                  <label class="frame-text" for="col">
+                    <input class="input-frame" name="input-frame-plus-minus" type="text" id="col" value="2">
+                  </label>
                   <button class="button-plus"></button>
                 </section>
                 <a class="button-search-modal" href="#">Найти</a>
