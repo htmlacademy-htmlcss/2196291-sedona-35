@@ -59,7 +59,7 @@ body {
 }
 
 .navigation {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   display: flex;
@@ -529,7 +529,7 @@ body {
 }
 
 .catalog-filter-title {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   line-height: 24px;
   padding: 0;
@@ -558,7 +558,7 @@ body {
 }
 
 .hotels-card-title {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -567,7 +567,7 @@ body {
 }
 
 .hotels-card-list {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   display: grid;
@@ -894,7 +894,7 @@ body {
 }
 
 .subscribe {
-  font-family: PT Sans, sans-serif;
+  font-family: "PT Sans", sans-serif;
   display: flex;
   justify-content: center;
   font-size: 30px;
@@ -905,7 +905,7 @@ body {
 }
 
 .sudscribe-tetle {
-  font-family: PT Sans, sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
@@ -928,7 +928,7 @@ body {
 }
 
 .subscribe-box {
-  font-family: PT Sans, sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -945,7 +945,7 @@ body {
 }
 
 .field {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1309,7 +1309,7 @@ body {
 
 .breadcrumbs-link-hotel {
   font-size: 16px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   line-height: 21px;
 }
 
@@ -1411,7 +1411,7 @@ body {
 }
 
 .input-from {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   padding: 0 20px;
   font-weight: 700;
   Font-size: 18px;
