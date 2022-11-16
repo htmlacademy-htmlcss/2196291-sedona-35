@@ -22,7 +22,6 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #F2F2F2;
-  width: 1280px;
   margin: 0 auto;
 }
 
@@ -65,7 +64,6 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
-
 }
 
 .logo-navigation {
@@ -241,7 +239,10 @@ body {
   min-width: 44px;
 }
 
-
+.navigation-link:hover,
+.navigation-link:focus {
+  color: rgba(117, 97, 87, 1);
+}
 
 .button-navigation-user {
   padding: 8px 34px;
@@ -262,7 +263,6 @@ body {
   outline: none;
 }
 
-
 .button-navigation-user:hover,
 .button-navigation-user:focus {
   background-color: #615048;
@@ -271,7 +271,6 @@ body {
 .button-navigation-user:active {
   background-color: #756157;
   color: #ffffff4d;
-
 }
 
 .button:hover,
@@ -389,31 +388,41 @@ body {
   background-color: #7DB54F;
 }
 
-.select-control:hover {
-  outline: 2px solid #68A2CA;
+.select-control {
+  font-size: 18px;
+  margin-left: 200px;
+  margin-right: 70px;
+  width: 292px;
+  height: 49px;
+  padding: 0 20px;
   border-radius: 4px;
+  border: 2px solid #E5E5E5;
+  appearance: none;
+  background-image: url(../images/arrow-down-input.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.select-control:hover {
+  border: 2px solid #68A2CA;
 }
 
 .select-control:default {
   color: #333333;
   border: 2px solid #E5E5E5;
-  border-radius: 4px;
 }
 
 .select-control:focus {
   color: #b3b3b3;
-  outline: 2px solid #b3b3b3;
-  border-radius: 4px;
+  border: 2px solid #b3b3b3;
 }
 
 .select-control:disabled {
-  outline: 2px solid #68A2CA;
-  border-radius: 4px;
+  border: 2px solid #68A2CA;
 }
 
 .select-control:active {
-  outline: 2px solid #3F5E72;
-  border-radius: 4px;
+  border: 2px solid #3F5E72;
 }
 
 .pagination-link:hover,
@@ -645,26 +654,10 @@ body {
   padding-top: 7px;
 }
 
-.select-control {
-  font-size: 18px;
-  margin-left: 200px;
-  margin-right: 70px;
-  width: 292px;
-  height: 49px;
-  padding: 0 20px;
-  border-radius: 4px;
-  appearance: none;
-  background-image: url(../images/arrow-down-input.svg);
-  background-repeat: no-repeat;
-  background-position: right 20px center;
-}
-
-
-
 .hero {
   position: relative;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #a5d1f1;
   background-image: url("../images/background-welcome.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -713,6 +706,7 @@ body {
 }
 
 .advantages {
+  min-width: 400px;
   color: #000000;
   text-align: center;
   background-color: #ffffff;
@@ -744,14 +738,13 @@ body {
 }
 
 .advantages-list {
-  display: grid;
-  grid-template-rows: 28.7% 28.7% 28.7% 28.7%;
-  grid-template-columns: 400px 400px 400px;
   gap: 0;
   height: 100%;
   padding: 0;
   margin-top: 22px;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages-description {
@@ -767,80 +760,47 @@ body {
 
 .city {
   background-color: #82B3D3;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-row-end: 2;
-  grid-column-end: 2;
   padding-top: 92px;
-  padding-bottom: 113px;
+  padding-bottom: 111px;
 }
 
 
 .advantages-images {
   background-color: #82B3D3;
-  background-image: url(../images/photo_city_sedona.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  grid-row-start: 1;
-  grid-column-start: 2;
-  grid-row-end: 2;
-  grid-column-end: 4;
+  height: 384px;
 }
 
 .small-area {
-  background-color: #f0f6fa;
-  grid-row-start: 2;
-  grid-column-start: 1;
-  grid-row-end: 3;
-  grid-column-end: 2;
-  padding-top: 102px;
+  background: rgba(131, 179, 211, 0.12);
+  padding: 102px 0 122px;
+
 }
 
 .beautiful-road {
-  background-color: #e6f0f6;
-  grid-row-start: 2;
-  grid-column-start: 2;
-  grid-row-end: 3;
-  grid-column-end: 3;
-  padding-top: 102px;
+  background: rgba(131, 179, 211, 0.2);
+  padding: 102px 0 122px;
 }
 
 .few-tourists {
-  background-color: #f0f6fa;
-  grid-row-start: 2;
-  grid-column-start: 3;
-  grid-row-end: 3;
-  grid-column-end: 4;
-  padding-top: 102px;
+  background: rgba(131, 179, 211, 0.12);
+  padding: 102px 0 122px;
 }
 
 .canyon {
-  background-color: #959898;
-  grid-row-start: 3;
-  grid-column-start: 1;
-  grid-row-end: 4;
-  grid-column-end: 3;
+  background-color: #82B3D3;
 }
 
 .devils-bridge {
   background-color: #82B3D3;
-  grid-row-start: 3;
-  grid-column-start: 3;
-  grid-row-end: 4;
-  grid-column-end: 4;
   padding-top: 92px;
 }
 
 .advantages-item-home {
-  background-color: #82B3D3;
+  background-color: rgba(131, 179, 211, 0.12);
   background-image: url("../images/home.svg");
   background-repeat: no-repeat;
   background-position: top 80px right 161px;
-  grid-row-start: 4;
-  grid-column-start: 1;
-  grid-row-end: 5;
-  grid-column-end: 2;
-  padding-top: 182px;
+  padding: 182px 0 80px;
 }
 
 .advantages-item-food {
@@ -848,11 +808,7 @@ body {
   background-repeat: no-repeat;
   background-position: top 81px right 162.5px;
   background-color: #FFFFFF;
-  grid-row-start: 4;
-  grid-column-start: 2;
-  grid-row-end: 5;
-  grid-column-end: 3;
-  padding-top: 182px;
+  padding: 182px 0 80px;
 }
 
 .advantages-item-souvenir {
@@ -860,12 +816,7 @@ body {
   background-repeat: no-repeat;
   background-position: top 78px right 167.5px;
   background-color: #f0f6fa;
-  grid-row-start: 4;
-  grid-column-start: 3;
-  grid-row-end: 5;
-  grid-column-end: 4;
-  padding-top: 182px;
-
+  padding: 182px 0 80px;
 }
 
 .search {
@@ -879,8 +830,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 293px;
-  margin-bottom: 0;
+  margin: 95px 0 0;
 }
 
 .search-hotels {
@@ -922,6 +872,7 @@ body {
 .subscribe-index {
   margin-top: 95px;
   color: #ffffff;
+  background-color: #a5d1f1;
   background-image: url("../images/background-mailing-list.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -959,7 +910,6 @@ body {
   outline: none;
 }
 
-
 .filter-catalog {
   width: 1200px;
   color: #000000;
@@ -987,7 +937,6 @@ body {
   z-index: 1;
 }
 
-
 .filter-content-title {
   position: relative;
   font-size: 60px;
@@ -1002,7 +951,6 @@ body {
   text-align: center;
   margin: 37px 0 40px 0;
 }
-
 
 .pagination {
   display: flex;
@@ -1021,8 +969,6 @@ body {
 .pagination-item {
   list-style-type: none;
 }
-
-
 
 .pagination-link {
   color: #FFFFFF;
@@ -1050,7 +996,6 @@ body {
   outline: none;
 }
 
-
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
@@ -1063,7 +1008,6 @@ body {
   padding-bottom: 13px;
   outline: none;
 }
-
 
 .footer-contacts-address-phone {
   font-size: 40px;
@@ -1095,7 +1039,6 @@ body {
 .icon-footer-social:focus {
   fill: #68A2CA;
 }
-
 
 .icon-footer-social:active {
   fill: #68a2ca4d;
